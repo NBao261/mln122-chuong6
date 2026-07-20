@@ -143,6 +143,9 @@ h1, h2, h3, h4, h5, h6 {
    ═══════════════════════════════════════════ */
 .hero {
   background-color: var(--brutal-dark);
+  background-image: linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.9)), url('hero_bg.png');
+  background-size: cover;
+  background-position: center;
   padding: 8rem 2rem;
   text-align: center;
   border-bottom: var(--border-thick);
