@@ -486,15 +486,50 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
 }
 
+.case-study-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 992px) {
+  .case-study-hero {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.case-study-img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: var(--border-thick);
+  box-shadow: 8px 8px 0px #000;
+  transition: transform 0.3s;
+}
+
+@media (min-width: 992px) {
+  .case-study-img {
+    width: 40%;
+  }
+}
+
+.case-study-img:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0px #000;
+}
+
 .case-context {
   background: #fff;
   color: #000;
   border: var(--border-thick);
   padding: 1.5rem;
   box-shadow: var(--shadow-hard);
-  margin-bottom: 3rem;
   font-size: 1.1rem;
   font-weight: 500;
+  flex: 1;
 }
 
 .debate-container {
